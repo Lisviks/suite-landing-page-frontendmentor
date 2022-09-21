@@ -23,6 +23,7 @@ body {
   max-width: 450px;
   width: 375px;
   margin: 0 auto;
+  position: relative;
 }
 
 img {
@@ -137,10 +138,12 @@ main {
   background-color: var(--dark-blue);
   border-radius: 1.5rem;
   text-align: center;
-  position: relative;
-  bottom: -14rem;
-  margin-top: 23.7rem;
   padding: 26.1rem 1.6rem 6.4rem;
+  position: absolute;
+  width: 375px;
+  bottom: 28.6rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 main .photo {
@@ -216,6 +219,7 @@ footer {
   background-color: var(--cream);
   padding: 19rem 12.45rem 8rem;
   text-align: center;
+  margin-top: 85.1rem;
 }
 
 footer .logo {
@@ -257,4 +261,106 @@ footer .socials div {
   height: 2rem;
   width: 2rem;
   background: var(--dark-blue);
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 850px;
+    width: 768px;
+  }
+
+  header {
+    padding: 0 4rem;
+  }
+
+  .header {
+    margin-top: 4rem;
+  }
+
+  .header .btn {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.016rem;
+    padding: 1.1rem 2.4rem;
+  }
+
+  .hero {
+    margin-top: 16.8rem;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.0777778rem;
+    text-align: left;
+    width: 50rem;
+  }
+
+  .hero h1 span img {
+    width: 23.119rem;
+    top: -4.532rem;
+    right: -0.3rem;
+  }
+
+  .hero p {
+    margin-top: 4rem;
+    text-align: left;
+    width: 35rem;
+  }
+
+  .hero .btn {
+    margin-top: 5.5rem;
+  }
+
+  .hero .hero-image {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: -8.8rem;
+    width: 28.1rem;
+    z-index: -5;
+  }
+
+  .stats {
+    margin-top: 12.8rem;
+    display: flex;
+    justify-content: space-around;
+    width: 68.9rem;
+  }
+
+  .stats div {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 26.1rem 5.8rem 6.4rem;
+    width: 68.9rem;
+    bottom: 17.6rem;
+  }
+
+  main .blur-pattern {
+    width: 50rem;
+  }
+
+  footer {
+    padding: 53.6rem 4rem 7.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 49.3rem;
+  }
+
+  footer .logo {
+    margin: 0;
+  }
+
+  footer p {
+    margin-top: 0;
+  }
+
+  footer .socials {
+    margin-top: 0;
+  }
 }
