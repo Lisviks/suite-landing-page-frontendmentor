@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+:root {
+  --dark-blue: #172339;
+  --grey: #49566d;
+  --cream-white: #faf8f6;
+  --cream: #f3ede7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: var(--cream-white);
+  max-width: 450px;
+  width: 375px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 0 1.6rem;
+}
+
+.header {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 8.1rem;
+}
+
+.header .btn {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.014rem;
+  color: var(--dark-blue);
+  padding: 1.1rem 1.6rem;
+  background-color: transparent;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.6rem;
+}
+
+.hero {
+  margin-top: 8.332rem;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-size: 3.8rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.0527778rem;
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+.hero h1 span {
+  font-weight: 700;
+  position: relative;
+}
+
+.hero h1 span img {
+  width: 15.147rem;
+  position: absolute;
+  top: -2.732rem;
+  right: 0.7rem;
+}
+
+.hero p {
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.00888889rem;
+  color: var(--grey);
+}
+
+.hero .btn {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.018rem;
+  color: var(--cream-white);
+  padding: 1.5rem 3.1rem 1.4rem 3.2rem;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 0.6rem;
+  margin-top: 3.2rem;
+}
+
+.hero .hero-image {
+  margin-top: 5.568rem;
+}
+
+.stats {
+  text-align: center;
+  margin-top: 5.6rem;
+}
+
+.stats div {
+  margin-bottom: 3.2rem;
+}
+
+.stats div:last-child {
+  margin-bottom: 0;
+}
+
+.stats h3 {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  color: var(--dark-blue);
+}
+
+.stats p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+main {
+  background-color: var(--dark-blue);
+  border-radius: 1.5rem;
+  text-align: center;
+  position: relative;
+  bottom: -14rem;
+  margin-top: 23.7rem;
+  padding: 26.1rem 1.6rem 6.4rem;
+}
+
+main .photo {
+  width: 25.2rem;
+  position: absolute;
+  top: -18.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .blur-pattern {
+  width: 34.3rem;
+  height: 41.2rem;
+  position: absolute;
+  top: -18.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+main .blur-pattern img {
+  position: absolute;
+  bottom: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .curved-line {
+  width: 4.927rem;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.0416667rem;
+  color: var(--cream-white);
+  margin-top: 3.7rem;
+}
+
+main h2 span {
+  font-weight: 700;
+}
+
+main blockquote {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.009rem;
+  color: var(--cream);
+  margin-top: 4rem;
+}
+
+main h4 {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.018rem;
+  text-transform: uppercase;
+  color: var(--cream-white);
+  margin-top: 4rem;
+}
+
+main p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+
+footer {
+  background-color: var(--cream);
+  padding: 19rem 12.45rem 8rem;
+  text-align: center;
+}
+
+footer .logo {
+  width: 8.1rem;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.00833333rem;
+  color: var(--grey);
+  margin-top: 3.3rem;
+}
+
+footer .socials {
+  margin-top: 3.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11.6rem;
+}
+
+.facebook {
+  mask: url('./assets/icon-facebook.svg');
+}
+
+.twitter {
+  mask: url('./assets/icon-twitter.svg');
+  height: 1.625rem !important;
+}
+
+.instagram {
+  mask: url('./assets/icon-instagram.svg');
+}
+
+footer .socials div {
+  mask-size: contain;
+  height: 2rem;
+  width: 2rem;
+  background: var(--dark-blue);
+}
